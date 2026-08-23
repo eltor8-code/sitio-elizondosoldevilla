@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elizondo Soldevilla y Asociados, S.C.</title>
+<meta name="description" content="Elizondo Soldevilla y Asociados, S.C. Derecho laboral patronal, fiscal y seguridad social en San Luis Potosí. Más de treinta años de ejercicio.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0E1B2E">
+<link rel="canonical" href="https://elizondosoldevilla.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:url" content="https://elizondosoldevilla.com/">
+<meta property="og:title" content="Elizondo Soldevilla y Asociados, S.C.">
+<meta property="og:description" content="La contingencia laboral no nace en el juicio. Nace en la nómina.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%96%3C/text%3E%3C/svg%3E">
+
+<style>
+  :root {
+    --tinta:      #0E1B2E;
+    --tinta-alta: #1B2C44;
+    --fondo:      #EDEFF2;
+    --panel:      #F6F7F9;
+    --texto:      #0E1B2E;
+    --gris:       #4E5867;
+    --gris-tenue: #77808F;
+    --oro:        #8F6A1F;
+    --oro-vivo:   #C19A3E;
+    --regla:      rgba(14, 27, 46, .16);
+    --regla-fina: rgba(14, 27, 46, .09);
+
+    --serif: Cambria, "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
+    --sans:  "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --mono:  "Cascadia Mono", "SF Mono", ui-monospace, Consolas, "Liberation Mono", monospace;
+
+    --col: 64ch;
+    --margen: 13rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --tinta:      #E6EAF1;
+      --tinta-alta: #FFFFFF;
+      --fondo:      #0B1524;
+      --panel:      #101F33;
+      --texto:      #DDE3EC;
+      --gris:       #98A4B6;
+      --gris-tenue: #74808F;
+      --oro:        #D8BC72;
+      --oro-vivo:   #D8BC72;
+      --regla:      rgba(216, 188, 114, .22);
+      --regla-fina: rgba(216, 188, 114, .12);
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .env {
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .instrumento {
+    display: grid;
+    grid-template-columns: var(--margen) minmax(0, 1fr);
+    column-gap: 2.75rem;
+    border-left: 1px solid var(--regla);
+  }
+  .marginal {
+    font-family: var(--mono);
+    font-size: .7rem;
+    line-height: 1.5;
+    letter-spacing: .01em;
+    color: var(--gris-tenue);
+    text-align: right;
+    padding-top: .5rem;
+  }
+  .marginal b {
+    display: block;
+    font-weight: 600;
+    color: var(--oro);
+    letter-spacing: .04em;
+  }
+
+  @media (max-width: 900px) {
+    .instrumento {
+      grid-template-columns: minmax(0, 1fr);
+      row-gap: .5rem;
+      padding-left: 1.1rem;
+    }
+    .marginal { text-align: left; padding-top: 0; order: 2; }
+    .instrumento > .cuerpo { order: 1; }
+  }
+
+  .masthead {
+    border-bottom: 1px solid var(--regla);
+    padding: 1.4rem 0 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .75rem 2rem;
+  }
+  .marca {
+    font-family: var(--serif);
+    font-size: 1.16rem;
+    font-weight: 700;
+    letter-spacing: .015em;
+    color: var(--tinta-alta);
+  }
+  .marca span { color: var(--oro); font-weight: 400; }
+  .lema {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: .93rem;
+    color: var(--gris);
+  }
+
+  .apertura { padding: 5.5rem 0 3.25rem; }
+  .rotulo {
+    font-family: var(--mono);
+    font-size: .69rem;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: var(--oro);
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin: 0 0 1.9rem;
+  }
+  .rotulo::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--regla-fina);
+  }
+  .tesis {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(1.95rem, 4.6vw, 3.35rem);
+    line-height: 1.14;
+    letter-spacing: -.014em;
+    text-wrap: balance;
+    color: var(--tinta-alta);
+    margin: 0;
+    max-width: 21ch;
+  }
+  .tesis em { font-style: normal; color: var(--oro-vivo); }
+  .bajada {
+    max-width: var(--col);
+    margin: 1.85rem 0 0;
+    font-size: 1.06rem;
+    color: var(--gris);
+  }
+
+  .cifras {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3.1rem 0 0;
+    border-top: 1px solid var(--regla);
+    border-bottom: 1px solid var(--regla);
+  }
+  .cifra {
+    padding: 1.15rem 2.2rem 1.15rem 0;
+    margin-right: 2.2rem;
+    border-right: 1px solid var(--regla-fina);
+  }
+  .cifra:last-child { border-right: 0; margin-right: 0; }
+  .cifra dt {
+    font-family: var(--serif);
+    font-size: 1.72rem;
+    font-weight: 700;
+    color: var(--oro-vivo);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.1;
+  }
+  .cifra dd {
+    margin: .2rem 0 0;
+    font-family: var(--mono);
+    font-size: .68rem;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    color: var(--gris-tenue);
+  }
+
+  .acciones { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2.6rem; }
+  .btn {
+    font-family: var(--mono);
+    font-size: .76rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .82rem 1.5rem;
+    border: 1px solid var(--tinta);
+    color: var(--tinta-alta);
+    background: transparent;
+    transition: background .18s ease, color .18s ease, border-color .18s ease;
+  }
+  .btn:hover, .btn:focus-visible { background: var(--tinta); color: var(--fondo); }
+  .btn--oro { border-color: var(--oro-vivo); background: var(--oro-vivo); color: #0E1B2E; }
+  .btn--oro:hover, .btn--oro:focus-visible { background: transparent; color: var(--oro); border-color: var(--oro); }
+
+  .seccion { padding: 4.4rem 0; border-top: 1px solid var(--regla); }
+  .seccion-tit {
+    font-family: var(--serif);
+    font-size: clamp(1.45rem, 2.6vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -.01em;
+    color: var(--tinta-alta);
+    margin: 0 0 .9rem;
+    text-wrap: balance;
+  }
+  .intro { max-width: var(--col); color: var(--gris); margin: 0; }
+  .intro + .intro { margin-top: 1rem; }
+
+  .clausulas { margin-top: 2.9rem; display: flex; flex-direction: column; }
+  .clausula { padding: 1.7rem 0; border-top: 1px solid var(--regla-fina); }
+  .clausula:first-child { border-top: 0; padding-top: .4rem; }
+  .clausula h3 {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 .45rem;
+    color: var(--tinta-alta);
+    display: flex;
+    align-items: baseline;
+    gap: .65rem;
+  }
+  .clausula h3::before {
+    content: "";
+    width: 5px; height: 5px;
+    flex: none;
+    background: var(--oro-vivo);
+    transform: translateY(-.22em);
+  }
+  .clausula p { margin: 0; max-width: var(--col); color: var(--gris); font-size: .98rem; }
+
+  .aviso {
+    margin-top: 2.9rem;
+    padding: 1.4rem 1.6rem;
+    background: var(--panel);
+    border-left: 2px solid var(--oro-vivo);
+  }
+  .aviso p {
+    margin: 0;
+    max-width: var(--col);
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--tinta-alta);
+  }
+
+  .colofon { padding: 4.6rem 0 5.5rem; border-top: 1px solid var(--regla); }
+  .atentamente {
+    font-family: var(--mono);
+    font-size: .69rem;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: var(--oro);
+    margin: 0 0 1.5rem;
+  }
+  .firmante {
+    font-family: var(--serif);
+    font-size: clamp(1.4rem, 3vw, 1.95rem);
+    font-weight: 700;
+    color: var(--tinta-alta);
+    margin: 0;
+    letter-spacing: -.008em;
+  }
+  .cargo { margin: .35rem 0 0; color: var(--gris); }
+  .datos {
+    margin: 2.1rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem 2.6rem;
+    font-family: var(--mono);
+    font-size: .82rem;
+  }
+  .datos a, .datos span { color: var(--tinta-alta); text-decoration: none; }
+  .datos a { border-bottom: 1px solid var(--oro-vivo); padding-bottom: 2px; }
+  .datos a:hover, .datos a:focus-visible { color: var(--oro); }
+  .pie {
+    margin-top: 3.2rem;
+    padding-top: 1.3rem;
+    border-top: 1px solid var(--regla-fina);
+    font-size: .8rem;
+    color: var(--gris-tenue);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .5rem 2rem;
+  }
+  .pie em { font-family: var(--serif); }
+
+  a:focus-visible, .btn:focus-visible {
+    outline: 2px solid var(--oro-vivo);
+    outline-offset: 3px;
+  }
+
+  .alza { animation: alza .75s cubic-bezier(.22, .61, .36, 1) both; }
+  .alza:nth-child(2) { animation-delay: .07s; }
+  .alza:nth-child(3) { animation-delay: .14s; }
+  .alza:nth-child(4) { animation-delay: .21s; }
+  @keyframes alza {
+    from { opacity: 0; transform: translateY(11px); }
+    to   { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .alza { animation: none; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="env">
+
+  <header class="masthead">
+    <div class="marca">Elizondo Soldevilla <span>y Asociados, S.C.</span></div>
+    <div class="lema">&ldquo;La justicia es igual para todos&rdquo;</div>
+  </header>
+
+  <section class="apertura">
+    <p class="rotulo alza">Derecho laboral patronal &middot; San Luis Potos&iacute;</p>
+    <h1 class="tesis alza">La contingencia laboral no nace en el juicio. Nace en la <em>n&oacute;mina</em>.</h1>
+    <p class="bajada alza">Nace en el contrato que no corresponde a la relaci&oacute;n real, en el acta levantada sin las formalidades y en la baja documentada de prisa. Para cuando llega la demanda, esos tres documentos ya no admiten correcci&oacute;n. Nosotros trabajamos antes de ese momento, y cuando el asunto igual llega a juicio, lo litigamos.</p>
+
+    <dl class="cifras alza">
+      <div class="cifra"><dt>+30</dt><dd>A&ntilde;os de ejercicio</dd></div>
+      <div class="cifra"><dt>100%</dt><dd>Capital mexicano</dd></div>
+      <div class="cifra"><dt>SLP</dt><dd>Noveno Circuito</dd></div>
+    </dl>
+
+    <div class="acciones alza">
+      <a class="btn btn--oro" href="tel:+524442164219">Llamar al 444 216 4219</a>
+      <a class="btn" href="mailto:abel@elizondosoldevilla.com?subject=Consulta%20laboral">Escribir al despacho</a>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="instrumento">
+      <div class="marginal"><b>La firma</b>Contadores p&uacute;blicos<br>Licenciados en derecho<br>Consultores de negocios</div>
+      <div class="cuerpo">
+        <h2 class="seccion-tit">Un solo equipo para el frente laboral y el fiscal</h2>
+        <p class="intro">Trabajar el frente laboral separado del fiscal es lo que produce criterios encontrados dentro de la propia empresa: el &aacute;rea de n&oacute;mina registra de una forma, recursos humanos documenta de otra, y la contradicci&oacute;n aparece a&ntilde;os despu&eacute;s en un juicio, exhibida por la contraparte.</p>
+        <p class="intro">Elizondo Soldevilla y Asociados re&uacute;ne en un mismo despacho a licenciados en derecho, contadores p&uacute;blicos y consultores de negocios. La misma mano que calcula el finiquito es la que despu&eacute;s lo defiende.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="instrumento">
+      <div class="marginal"><b>Pr&aacute;ctica laboral</b>Ley Federal<br>del Trabajo</div>
+      <div class="cuerpo">
+        <h2 class="seccion-tit">Defensa de la empresa, del expediente al laudo</h2>
+        <p class="intro">Seis frentes donde el riesgo se origina y donde, con la misma oportunidad, se neutraliza.</p>
+      </div>
+    </div>
+
+    <div class="clausulas">
+
+      <div class="instrumento clausula">
+        <div class="marginal">Art. 132 LFT</div>
+        <div class="cuerpo">
+          <h3>Consultor&iacute;a preventiva</h3>
+          <p>Participamos en las decisiones de las &aacute;reas operativas antes de que se tomen, con el panorama completo de las obligaciones de la persona empleadora y de las alternativas disponibles.</p>
+        </div>
+      </div>
+
+      <div class="instrumento clausula">
+        <div class="marginal">Arts. 35, 39-A y 39-B LFT</div>
+        <div class="cuerpo">
+          <h3>Contratos individuales de trabajo</h3>
+          <p>Elaboraci&oacute;n conforme a la modalidad real de cada relaci&oacute;n: obra o tiempo determinado, temporada, periodo a prueba o capacitaci&oacute;n inicial. Un contrato que no corresponde a los hechos se desnaturaliza, y con &eacute;l se cae la defensa.</p>
+        </div>
+      </div>
+
+      <div class="instrumento clausula">
+        <div class="marginal">Art. 47 LFT</div>
+        <div class="cuerpo">
+          <h3>Actas circunstanciadas y administrativas</h3>
+          <p>Documentaci&oacute;n de conductas u omisiones que sostiene el expediente del trabajador, la imposici&oacute;n de sanciones y la rescisi&oacute;n por causa justificada. La formalidad del acta es lo que decide el juicio, no la gravedad de la falta.</p>
+        </div>
+      </div>
+
+      <div class="instrumento clausula">
+        <div class="marginal">Art. 684-A LFT</div>
+        <div class="cuerpo">
+          <h3>Citas conciliatorias</h3>
+          <p>Representaci&oacute;n de la empresa en la instancia conciliatoria previa ante los Centros de Conciliaci&oacute;n. Es donde el asunto se cierra barato o se encarece para siempre.</p>
+        </div>
+      </div>
+
+      <div class="instrumento clausula">
+        <div class="marginal">Arts. 33 y 987 LFT</div>
+        <div class="cuerpo">
+          <h3>Terminaciones laborales</h3>
+          <p>Convenios, finiquitos y renuncias, desde la redacci&oacute;n del respaldo jur&iacute;dico hasta la aprobaci&oacute;n y ratificaci&oacute;n ante la autoridad competente. Sin ratificaci&oacute;n, un convenio es papel.</p>
+        </div>
+      </div>
+
+      <div class="instrumento clausula">
+        <div class="marginal">Arts. 540 y 541 LFT</div>
+        <div class="cuerpo">
+          <h3>Inspecciones de la Secretar&iacute;a del Trabajo</h3>
+          <p>Acompa&ntilde;amiento durante la visita, desahogo y solventaci&oacute;n de observaciones. La empresa contesta mejor cuando el abogado est&aacute; ah&iacute; ese d&iacute;a, no cuando llega la multa.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="aviso">
+      <p>Contamos con un grupo especializado en litigio para la defensa de empresas ante acciones de trabajadores o sindicatos, ante los Tribunales Laborales y en la v&iacute;a de amparo.</p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="instrumento">
+      <div class="marginal"><b>Fiscal y operaci&oacute;n</b>Ley del Seguro Social<br>Legislaci&oacute;n tributaria</div>
+      <div class="cuerpo">
+        <h2 class="seccion-tit">Lo que sostiene el frente laboral por debajo</h2>
+        <p class="intro">La exposici&oacute;n de una empresa rara vez aparece en el estado de resultados antes de ser condena. Cuando aparece, trae salarios ca&iacute;dos, intereses y una prima de antig&uuml;edad que nadie provision&oacute;.</p>
+      </div>
+    </div>
+
+    <div class="clausulas">
+
+      <div class="instrumento clausula">
+        <div class="marginal">Federal y local</div>
+        <div class="cuerpo">
+          <h3>Asesor&iacute;a fiscal</h3>
+          <p>Consultor&iacute;a preventiva y reactiva con actualizaci&oacute;n constante en legislaci&oacute;n tributaria, anticipando el criterio de la autoridad en lugar de reaccionar a &eacute;l.</p>
+        </div>
+      </div>
+
+      <div class="instrumento clausula">
+        <div class="marginal">Arts. 15 y 72 LSS</div>
+        <div class="cuerpo">
+          <h3>Seguridad social y SIROC</h3>
+          <p>Registro e inscripci&oacute;n ante el Instituto, determinaci&oacute;n de la prima del seguro de riesgos de trabajo y Sistema de Registro de Obras y Contratistas. La prima mal calculada se paga dos veces: en cuotas y en el juicio por riesgo de trabajo.</p>
+        </div>
+      </div>
+
+      <div class="instrumento clausula">
+        <div class="marginal">Arts. 82 y 84 LFT</div>
+        <div class="cuerpo">
+          <h3>Servicio integral de n&oacute;minas</h3>
+          <p>C&aacute;lculo de n&oacute;mina y cuotas obrero-patronales, integraci&oacute;n del salario, recibos asimilados y dispersi&oacute;n. El salario diario integrado mal armado es el error que m&aacute;s caro se cobra en una liquidaci&oacute;n.</p>
+        </div>
+      </div>
+
+      <div class="instrumento clausula">
+        <div class="marginal">Control interno</div>
+        <div class="cuerpo">
+          <h3>Consultor&iacute;a administrativa</h3>
+          <p>Estudios por &aacute;reas de responsabilidad, control interno, administraci&oacute;n de n&oacute;minas, estudios financieros y liquidaciones.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="colofon">
+    <p class="atentamente">Atentamente</p>
+    <p class="firmante">Lic. Abel E. Elizondo Soldevilla</p>
+    <p class="cargo">Elizondo Soldevilla y Asociados, S.C. &middot; San Luis Potos&iacute;, S.L.P.</p>
+
+    <div class="datos">
+      <a href="tel:+524442164219">444 216 4219</a>
+      <a href="mailto:abel@elizondosoldevilla.com">abel@elizondosoldevilla.com</a>
+      <span>San Luis Potos&iacute; &middot; Baj&iacute;o &middot; Puerto Vallarta, Jal.</span>
+    </div>
+
+    <div class="pie">
+      <span>&copy; 2026 Elizondo Soldevilla y Asociados, S.C.</span>
+      <em>&ldquo;La justicia es igual para todos&rdquo;</em>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
