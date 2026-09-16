@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Elizondo Soldevilla y Asociados, S.C.</title>
-<meta name="description" content="Elizondo Soldevilla y Asociados, S.C. Derecho laboral patronal, fiscal y seguridad social en San Luis Potosí. Más de treinta años de ejercicio.">
+<title>Abogados laborales y fiscales en San Luis Potosí | Elizondo Soldevilla y Asociados</title>
+<meta name="description" content="Despacho de abogados y contadores en San Luis Potosí, el Bajío y Puerto Vallarta. Derecho laboral patronal, planeación y defensa fiscal, derecho corporativo, nómina y seguridad social. Más de 30 años de ejercicio.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0E1B2E">
 <link rel="canonical" href="https://elizondosoldevilla.com/">
@@ -12,48 +12,64 @@
 <meta property="og:locale" content="es_MX">
 <meta property="og:url" content="https://elizondosoldevilla.com/">
 <meta property="og:title" content="Elizondo Soldevilla y Asociados, S.C.">
-<meta property="og:description" content="La contingencia laboral no nace en el juicio. Nace en la nómina.">
+<meta property="og:description" content="La contingencia laboral no nace en el juicio. Nace en la nómina. Abogados laborales y fiscales en San Luis Potosí.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%96%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Elizondo Soldevilla y Asociados, S.C.",
+  "url": "https://elizondosoldevilla.com/",
+  "telephone": "+52 444 216 4219",
+  "email": "abel@elizondosoldevilla.com",
+  "slogan": "La justicia es igual para todos",
+  "address": { "@type": "PostalAddress", "addressLocality": "San Luis Potosí", "addressRegion": "S.L.P.", "addressCountry": "MX" },
+  "areaServed": ["San Luis Potosí", "El Bajío", "Puerto Vallarta"],
+  "knowsAbout": ["Derecho laboral patronal", "Planeación fiscal", "Defensa fiscal", "Derecho corporativo", "Nómina", "Seguridad social"]
+}
+</script>
 
 <style>
   :root {
-    --tinta:      #0E1B2E;
-    --tinta-alta: #1B2C44;
-    --fondo:      #EDEFF2;
-    --panel:      #F6F7F9;
+    --marino:     #0E1B2E;
+    --marino-2:   #16273F;
+    --marino-3:   #1F3452;
+    --oro:        #C19A3E;
+    --oro-hondo:  #8F6A1F;
+    --oro-claro:  #E3C77F;
+
+    --fondo:      #F4F5F7;
+    --papel:      #FFFFFF;
     --texto:      #0E1B2E;
     --gris:       #4E5867;
-    --gris-tenue: #77808F;
-    --oro:        #8F6A1F;
-    --oro-vivo:   #C19A3E;
-    --regla:      rgba(14, 27, 46, .16);
-    --regla-fina: rgba(14, 27, 46, .09);
+    --gris-tenue: #6E7888;
+    --regla:      rgba(14, 27, 46, .12);
+    --sombra:     0 1px 2px rgba(14,27,46,.06), 0 8px 24px rgba(14,27,46,.07);
 
     --serif: Cambria, "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
     --sans:  "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    --mono:  "Cascadia Mono", "SF Mono", ui-monospace, Consolas, "Liberation Mono", monospace;
 
-    --col: 64ch;
-    --margen: 13rem;
+    --ancho: 72rem;
+    --nav-alto: 4.75rem;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --tinta:      #E6EAF1;
-      --tinta-alta: #FFFFFF;
       --fondo:      #0B1524;
-      --panel:      #101F33;
+      --papel:      #111F33;
       --texto:      #DDE3EC;
-      --gris:       #98A4B6;
-      --gris-tenue: #74808F;
-      --oro:        #D8BC72;
-      --oro-vivo:   #D8BC72;
-      --regla:      rgba(216, 188, 114, .22);
-      --regla-fina: rgba(216, 188, 114, .12);
+      --gris:       #A3AEBF;
+      --gris-tenue: #8390A3;
+      --oro-hondo:  #D8BC72;
+      --regla:      rgba(216, 188, 114, .16);
+      --sombra:     0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
     }
   }
 
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-alto) + .5rem); }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
   body {
     margin: 0;
@@ -64,525 +80,832 @@
     line-height: 1.62;
     -webkit-font-smoothing: antialiased;
   }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .env { max-width: var(--ancho); margin: 0 auto; padding: 0 1.25rem; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-  .env {
-    max-width: 76rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-
-  .instrumento {
-    display: grid;
-    grid-template-columns: var(--margen) minmax(0, 1fr);
-    column-gap: 2.75rem;
-    border-left: 1px solid var(--regla);
-  }
-  .marginal {
-    font-family: var(--mono);
-    font-size: .7rem;
-    line-height: 1.5;
-    letter-spacing: .01em;
-    color: var(--gris-tenue);
-    text-align: right;
-    padding-top: .5rem;
-  }
-  .marginal b {
-    display: block;
-    font-weight: 600;
-    color: var(--oro);
-    letter-spacing: .04em;
-  }
-
-  @media (max-width: 900px) {
-    .instrumento {
-      grid-template-columns: minmax(0, 1fr);
-      row-gap: .5rem;
-      padding-left: 1.1rem;
-    }
-    .marginal { text-align: left; padding-top: 0; order: 2; }
-    .instrumento > .cuerpo { order: 1; }
-  }
-
-  .masthead {
-    border-bottom: 1px solid var(--regla);
-    padding: 1.4rem 0 1.1rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: .75rem 2rem;
-  }
-  .marca {
-    font-family: var(--serif);
-    font-size: 1.16rem;
-    font-weight: 700;
-    letter-spacing: .015em;
-    color: var(--tinta-alta);
-  }
-  .marca span { color: var(--oro); font-weight: 400; }
-  .lema {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: .93rem;
-    color: var(--gris);
-  }
-
-  .apertura { padding: 5.5rem 0 3.25rem; }
-  .rotulo {
-    font-family: var(--mono);
-    font-size: .69rem;
-    letter-spacing: .19em;
-    text-transform: uppercase;
-    color: var(--oro);
-    display: flex;
-    align-items: center;
-    gap: .7rem;
-    margin: 0 0 1.9rem;
-  }
-  .rotulo::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: var(--regla-fina);
-  }
-  .tesis {
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: clamp(1.95rem, 4.6vw, 3.35rem);
-    line-height: 1.14;
-    letter-spacing: -.014em;
-    text-wrap: balance;
-    color: var(--tinta-alta);
-    margin: 0;
-    max-width: 21ch;
-  }
-  .tesis em { font-style: normal; color: var(--oro-vivo); }
-  .bajada {
-    max-width: var(--col);
-    margin: 1.85rem 0 0;
-    font-size: 1.06rem;
-    color: var(--gris);
-  }
-
-  .cifras {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3.1rem 0 0;
-    border-top: 1px solid var(--regla);
-    border-bottom: 1px solid var(--regla);
-  }
-  .cifra {
-    padding: 1.15rem 2.2rem 1.15rem 0;
-    margin-right: 2.2rem;
-    border-right: 1px solid var(--regla-fina);
-  }
-  .cifra:last-child { border-right: 0; margin-right: 0; }
-  .cifra dt {
-    font-family: var(--serif);
-    font-size: 1.72rem;
-    font-weight: 700;
-    color: var(--oro-vivo);
-    font-variant-numeric: tabular-nums;
-    line-height: 1.1;
-  }
-  .cifra dd {
-    margin: .2rem 0 0;
-    font-family: var(--mono);
-    font-size: .68rem;
-    letter-spacing: .11em;
-    text-transform: uppercase;
-    color: var(--gris-tenue);
-  }
-
-  .acciones { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2.6rem; }
+  /* ---------- botones ---------- */
   .btn {
-    font-family: var(--mono);
-    font-size: .76rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: .82rem 1.5rem;
-    border: 1px solid var(--tinta);
-    color: var(--tinta-alta);
-    background: transparent;
-    transition: background .18s ease, color .18s ease, border-color .18s ease;
+    display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+    min-height: 3rem; padding: .8rem 1.4rem;
+    border-radius: 999px; border: 1px solid transparent;
+    font: 600 .95rem/1.1 var(--sans); letter-spacing: .01em;
+    text-decoration: none; cursor: pointer;
+    transition: background .2s, color .2s, border-color .2s, transform .2s;
   }
-  .btn:hover, .btn:focus-visible { background: var(--tinta); color: var(--fondo); }
-  .btn--oro { border-color: var(--oro-vivo); background: var(--oro-vivo); color: #0E1B2E; }
-  .btn--oro:hover, .btn--oro:focus-visible { background: transparent; color: var(--oro); border-color: var(--oro); }
+  .btn:active { transform: translateY(1px); }
+  .btn svg { width: 1.15rem; height: 1.15rem; flex: none; }
+  .btn--oro { background: var(--oro); color: var(--marino); }
+  .btn--oro:hover { background: var(--oro-claro); }
+  .btn--claro { border-color: rgba(255,255,255,.55); color: #fff; }
+  .btn--claro:hover { background: rgba(255,255,255,.12); border-color: #fff; }
+  .btn--whats { background: #1FA855; color: #fff; }
+  .btn--whats:hover { background: #178A45; }
+  .btn--marino { background: var(--marino); color: #fff; }
+  .btn--marino:hover { background: var(--marino-3); }
+  @media (prefers-color-scheme: dark) {
+    .btn--marino { background: var(--oro); color: var(--marino); }
+    .btn--marino:hover { background: var(--oro-claro); }
+  }
+  :focus-visible { outline: 2px solid var(--oro); outline-offset: 3px; }
 
-  .seccion { padding: 4.4rem 0; border-top: 1px solid var(--regla); }
-  .seccion-tit {
-    font-family: var(--serif);
-    font-size: clamp(1.45rem, 2.6vw, 2rem);
-    font-weight: 700;
-    letter-spacing: -.01em;
-    color: var(--tinta-alta);
-    margin: 0 0 .9rem;
-    text-wrap: balance;
+  /* ---------- navegación ---------- */
+  .nav {
+    position: fixed; inset: 0 0 auto 0; z-index: 50;
+    height: var(--nav-alto);
+    background: rgba(14, 27, 46, .0);
+    transition: background .3s, box-shadow .3s;
   }
-  .intro { max-width: var(--col); color: var(--gris); margin: 0; }
-  .intro + .intro { margin-top: 1rem; }
-
-  .clausulas { margin-top: 2.9rem; display: flex; flex-direction: column; }
-  .clausula { padding: 1.7rem 0; border-top: 1px solid var(--regla-fina); }
-  .clausula:first-child { border-top: 0; padding-top: .4rem; }
-  .clausula h3 {
-    font-family: var(--serif);
-    font-size: 1.15rem;
-    font-weight: 700;
-    margin: 0 0 .45rem;
-    color: var(--tinta-alta);
-    display: flex;
-    align-items: baseline;
-    gap: .65rem;
+  .nav.solida { background: rgba(14, 27, 46, .97); box-shadow: 0 1px 0 rgba(193,154,62,.25); }
+  .nav .env { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .marca { display: flex; align-items: center; gap: .7rem; text-decoration: none; color: #fff; }
+  .logo { height: 3.5rem; width: auto; }
+  @media (max-width: 560px) { .logo { height: 2.9rem; } }
+  .logo-lema { width: 15rem; height: auto; margin: 0 0 1rem; }
+  .hero-logo { width: clamp(13rem, 24vw, 19rem); height: auto; margin: 0 0 2.2rem; }
+  /* el logo de la barra aparece al bajar, para no repetir el de la portada */
+  .nav .marca { transition: opacity .3s; }
+  .nav:not(.solida):not(.menu-abierto) .marca { opacity: 0; pointer-events: none; }
+  .menu { display: flex; align-items: center; gap: 1.6rem; }
+  .menu a.enl { color: rgba(255,255,255,.86); text-decoration: none; font-size: .92rem; font-weight: 500; }
+  .menu a.enl:hover { color: var(--oro-claro); }
+  .menu .btn { min-height: 2.6rem; padding: .6rem 1.1rem; font-size: .88rem; }
+  .hamburguesa {
+    display: none; background: none; border: 0; color: #fff; cursor: pointer;
+    width: 2.75rem; height: 2.75rem; border-radius: 8px;
   }
-  .clausula h3::before {
-    content: "";
-    width: 5px; height: 5px;
-    flex: none;
-    background: var(--oro-vivo);
-    transform: translateY(-.22em);
-  }
-  .clausula p { margin: 0; max-width: var(--col); color: var(--gris); font-size: .98rem; }
-
-  .aviso {
-    margin-top: 2.9rem;
-    padding: 1.4rem 1.6rem;
-    background: var(--panel);
-    border-left: 2px solid var(--oro-vivo);
-  }
-  .aviso p {
-    margin: 0;
-    max-width: var(--col);
-    font-family: var(--serif);
-    font-size: 1.05rem;
-    font-style: italic;
-    color: var(--tinta-alta);
-  }
-
-  .colofon { padding: 4.6rem 0 5.5rem; border-top: 1px solid var(--regla); }
-  .atentamente {
-    font-family: var(--mono);
-    font-size: .69rem;
-    letter-spacing: .24em;
-    text-transform: uppercase;
-    color: var(--oro);
-    margin: 0 0 1.5rem;
-  }
-  .firmante {
-    font-family: var(--serif);
-    font-size: clamp(1.4rem, 3vw, 1.95rem);
-    font-weight: 700;
-    color: var(--tinta-alta);
-    margin: 0;
-    letter-spacing: -.008em;
-  }
-  .cargo { margin: .35rem 0 0; color: var(--gris); }
-  .datos {
-    margin: 2.1rem 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: .55rem 2.6rem;
-    font-family: var(--mono);
-    font-size: .82rem;
-  }
-  .datos a, .datos span { color: var(--tinta-alta); text-decoration: none; }
-  .datos a { border-bottom: 1px solid var(--oro-vivo); padding-bottom: 2px; }
-  .datos a:hover, .datos a:focus-visible { color: var(--oro); }
-  .pie {
-    margin-top: 3.2rem;
-    padding-top: 1.3rem;
-    border-top: 1px solid var(--regla-fina);
-    font-size: .8rem;
-    color: var(--gris-tenue);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: .5rem 2rem;
-  }
-  .pie em { font-family: var(--serif); }
-
-  a:focus-visible, .btn:focus-visible {
-    outline: 2px solid var(--oro-vivo);
-    outline-offset: 3px;
+  .hamburguesa svg { width: 1.6rem; height: 1.6rem; }
+  @media (max-width: 880px) {
+    .hamburguesa { display: grid; place-items: center; }
+    .menu {
+      position: fixed; inset: var(--nav-alto) 0 auto 0;
+      flex-direction: column; align-items: stretch; gap: 0;
+      background: var(--marino); padding: .5rem 1.25rem 1.25rem;
+      border-top: 1px solid rgba(193,154,62,.25);
+      transform: translateY(-.5rem); opacity: 0; visibility: hidden;
+      transition: opacity .2s, transform .2s, visibility .2s;
+    }
+    .menu.abierto { transform: none; opacity: 1; visibility: visible; }
+    .menu a.enl { padding: .95rem 0; border-bottom: 1px solid rgba(255,255,255,.08); font-size: 1rem; }
+    .menu .btn { margin-top: 1rem; min-height: 3rem; }
+    .nav.menu-abierto { background: var(--marino); }
   }
 
-  .alza { animation: alza .75s cubic-bezier(.22, .61, .36, 1) both; }
-  .alza:nth-child(2) { animation-delay: .07s; }
-  .alza:nth-child(3) { animation-delay: .14s; }
-  .alza:nth-child(4) { animation-delay: .21s; }
-  @keyframes alza {
-    from { opacity: 0; transform: translateY(11px); }
-    to   { opacity: 1; transform: none; }
+  /* ---------- hero con carrusel ---------- */
+  .hero {
+    position: relative; overflow: hidden;
+    min-height: min(46rem, 100svh);
+    display: flex; align-items: center;
+    color: #fff; background: var(--marino);
   }
+  .diapo {
+    position: absolute; inset: 0;
+    opacity: 0; transition: opacity 1.2s ease;
+    background-size: cover; background-position: center;
+  }
+  .diapo.activa { opacity: 1; }
+  /* fondos mientras llegan las fotos reales */
+  .diapo[data-n="1"] {
+    background-image:
+      linear-gradient(rgba(193,154,62,.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(193,154,62,.07) 1px, transparent 1px),
+      radial-gradient(ellipse at 78% 30%, #24406A 0%, #0E1B2E 62%);
+    background-size: 44px 44px, 44px 44px, cover;
+  }
+  .diapo[data-n="2"] {
+    background-image:
+      repeating-linear-gradient(115deg, rgba(193,154,62,.06) 0 1px, transparent 1px 38px),
+      radial-gradient(ellipse at 20% 80%, #2A3F5E 0%, #0E1B2E 60%);
+  }
+  .diapo[data-n="3"] {
+    background-image:
+      repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 22px, transparent 22px 64px),
+      radial-gradient(ellipse at 70% 90%, #1F3A5C 0%, #0B1524 65%);
+  }
+  .hero-velo {
+    position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(90deg, rgba(11,21,36,.88) 0%, rgba(11,21,36,.62) 55%, rgba(11,21,36,.35) 100%);
+  }
+  .hero .env { position: relative; z-index: 2; width: 100%; padding-top: calc(var(--nav-alto) + 1.5rem); padding-bottom: 6rem; }
+  .rotulo {
+    display: flex; align-items: center; gap: .7rem;
+    margin: 0 0 1.4rem;
+    font-size: .72rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--oro-claro);
+  }
+  .rotulo::before { content: ""; width: 2.2rem; height: 1px; background: var(--oro); }
+  .frases { position: relative; min-height: 10.5rem; max-width: 42rem; }
+  .frase {
+    position: absolute; inset: 0 0 auto 0; margin: 0;
+    font: 700 clamp(2rem, 5.2vw, 3.35rem)/1.12 var(--serif);
+    letter-spacing: -.01em; text-wrap: balance;
+    opacity: 0; transform: translateY(.6rem);
+    visibility: hidden;
+    /* la que sale se apaga rápido; la que entra espera a que termine */
+    transition: opacity .3s ease, transform .3s ease, visibility 0s linear .3s;
+  }
+  .frase.activa {
+    opacity: 1; transform: none; position: relative; visibility: visible;
+    transition: opacity .7s ease .35s, transform .7s ease .35s, visibility 0s;
+  }
+  .frase em { font-style: normal; color: var(--oro); }
+  .hero .bajada { max-width: 36rem; margin: 1.5rem 0 2.2rem; color: rgba(255,255,255,.82); font-size: 1.05rem; }
+  .acciones { display: flex; flex-wrap: wrap; gap: .8rem; }
+  .controles {
+    position: absolute; z-index: 3; left: 0; right: 0; bottom: 1.6rem;
+  }
+  .controles .env { display: flex; align-items: center; gap: .9rem; padding-top: 0; padding-bottom: 0; }
+  .flecha {
+    width: 2.6rem; height: 2.6rem; border-radius: 50%;
+    display: grid; place-items: center; cursor: pointer;
+    background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.3); color: #fff;
+  }
+  .flecha:hover { background: rgba(255,255,255,.18); }
+  .flecha svg { width: 1.1rem; height: 1.1rem; }
+  .puntos { display: flex; gap: .5rem; }
+  .punto {
+    width: .6rem; height: .6rem; padding: 0; border-radius: 999px; cursor: pointer;
+    background: rgba(255,255,255,.35); border: 0; transition: width .3s, background .3s;
+  }
+  .punto[aria-current="true"] { width: 1.8rem; background: var(--oro); }
+  /* área de toque cómoda sin agrandar el punto */
+  .punto { position: relative; }
+  .punto::before { content: ""; position: absolute; inset: -.8rem -.3rem; }
+
+  /* ---------- cifras ---------- */
+  .cifras { background: var(--marino-2); color: #fff; border-top: 1px solid rgba(193,154,62,.3); }
+  .cifras dl { margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); }
+  .cifra { padding: 1.9rem 1rem; text-align: center; }
+  .cifra + .cifra { border-left: 1px solid rgba(255,255,255,.1); }
+  .cifra dt { font: 700 clamp(1.8rem, 4vw, 2.5rem)/1 var(--serif); color: var(--oro); }
+  .cifra dd { margin: .5rem 0 0; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.72); }
+  @media (max-width: 560px) {
+    .cifras dl { grid-template-columns: 1fr; }
+    .cifra { padding: 1.15rem 1rem; display: flex; align-items: baseline; justify-content: center; gap: .8rem; }
+    .cifra + .cifra { border-left: 0; border-top: 1px solid rgba(255,255,255,.1); }
+    .cifra dd { margin: 0; }
+  }
+
+  /* ---------- secciones ---------- */
+  .seccion { padding: 5.5rem 0; }
+  .seccion--papel { background: var(--papel); }
+  .cabeza { max-width: 44rem; margin-bottom: 2.75rem; }
+  .cabeza .rotulo { color: var(--oro-hondo); }
+  .titulo { margin: 0; font: 700 clamp(1.7rem, 3.4vw, 2.35rem)/1.18 var(--serif); letter-spacing: -.005em; text-wrap: balance; }
+  .intro { margin: 1rem 0 0; color: var(--gris); font-size: 1.05rem; }
+  @media (max-width: 640px) { .seccion { padding: 4rem 0; } }
+
+  /* ---------- tarjetas de servicios ---------- */
+  .tarjetas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
+  @media (max-width: 1020px) { .tarjetas { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px)  { .tarjetas { grid-template-columns: 1fr; } }
+  .tarjeta {
+    display: flex; flex-direction: column;
+    background: var(--papel); border: 1px solid var(--regla); border-radius: 14px;
+    padding: 1.6rem 1.4rem 1.4rem; box-shadow: var(--sombra);
+    transition: transform .25s, box-shadow .25s, border-color .25s;
+  }
+  .tarjeta:hover { transform: translateY(-3px); border-color: rgba(193,154,62,.5); }
+  .icono {
+    width: 3rem; height: 3rem; border-radius: 12px; margin-bottom: 1.1rem;
+    display: grid; place-items: center;
+    background: var(--marino); color: var(--oro);
+  }
+  .icono svg { width: 1.55rem; height: 1.55rem; }
+  .tarjeta h3 { margin: 0 0 .5rem; font: 700 1.2rem/1.25 var(--serif); }
+  .tarjeta p { margin: 0 0 1.2rem; color: var(--gris); font-size: .95rem; flex: 1; }
+  .ver-mas {
+    align-self: flex-start; display: inline-flex; align-items: center; gap: .35rem;
+    color: var(--oro-hondo); font-weight: 600; font-size: .9rem; text-decoration: none;
+    padding: .35rem 0;
+  }
+  .ver-mas:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .ver-mas svg { width: 1rem; height: 1rem; transition: transform .2s; }
+  .ver-mas:hover svg { transform: translateX(3px); }
+
+  /* ---------- detalle de práctica ---------- */
+  .practica { padding-top: 3.5rem; margin-top: 3.5rem; border-top: 1px solid var(--regla); }
+  .practica:first-of-type { margin-top: 4rem; }
+  .practica-cab { display: grid; grid-template-columns: 17rem 1fr; gap: 2.5rem; }
+  .practica-cab .rotulo { color: var(--oro-hondo); margin-bottom: .6rem; }
+  .practica-cab h3 { margin: 0; font: 700 1.55rem/1.2 var(--serif); }
+  .practica-cab p { margin: 0 0 .8rem; color: var(--gris); }
+  .puntos-lista { margin: 1.8rem 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem 2.2rem; }
+  .puntos-lista li { padding-left: 1.1rem; border-left: 2px solid var(--oro); }
+  .puntos-lista h4 { margin: 0 0 .25rem; font: 700 1.03rem/1.3 var(--serif); }
+  .puntos-lista p { margin: 0; color: var(--gris); font-size: .93rem; }
+  .puntos-lista .ley { display: block; margin-top: .35rem; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--gris-tenue); }
+  .nota {
+    margin-top: 1.8rem; padding: 1rem 1.2rem; border-radius: 10px;
+    background: rgba(193,154,62,.09); border: 1px solid rgba(193,154,62,.3);
+    font-size: .95rem;
+  }
+  @media (max-width: 820px) {
+    .practica-cab { grid-template-columns: 1fr; gap: .8rem; }
+    .puntos-lista { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- franja de llamada ---------- */
+  .llamada { background: var(--marino); color: #fff; padding: 3rem 0; }
+  .llamada .env { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.2rem 2rem; }
+  .llamada p { margin: 0; font: 700 clamp(1.3rem, 2.6vw, 1.7rem)/1.25 var(--serif); max-width: 34rem; text-wrap: balance; }
+  .llamada p span { color: var(--oro); }
+
+  /* ---------- nosotros ---------- */
+  .dos-col { display: grid; grid-template-columns: 1fr 1.1fr; gap: 3.5rem; align-items: center; }
+  @media (max-width: 880px) { .dos-col { grid-template-columns: 1fr; gap: 2rem; } }
+  .foto {
+    position: relative; aspect-ratio: 4 / 5; border-radius: 16px; overflow: hidden;
+    background:
+      linear-gradient(rgba(193,154,62,.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(193,154,62,.08) 1px, transparent 1px),
+      linear-gradient(160deg, #1F3452, #0E1B2E);
+    background-size: 36px 36px, 36px 36px, cover;
+    background-position: center;
+    box-shadow: var(--sombra);
+  }
+  .foto.con-foto { background-size: cover; }
+  .foto-sello {
+    position: absolute; inset: 0; display: grid; place-items: center; text-align: center; color: #fff;
+  }
+  .foto.con-foto .foto-sello { display: none; }
+  .foto-sello b { display: block; color: var(--oro); }
+  .foto-sello b svg { width: 5.5rem; height: 5.5rem; margin: 0 auto; display: block; }
+  .foto-sello span { display: block; margin-top: .8rem; font-size: .75rem; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.7); }
+  .foto-pie {
+    position: absolute; left: 1rem; right: 1rem; bottom: 1rem;
+    padding: .9rem 1.1rem; border-radius: 10px;
+    background: rgba(14,27,46,.88); color: #fff; font-size: .88rem;
+    border: 1px solid rgba(193,154,62,.35);
+  }
+  .foto-pie b { color: var(--oro); font-family: var(--serif); font-size: 1.05rem; }
+  .perfiles { margin: 1.6rem 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; }
+  .perfiles li {
+    padding: .4rem .85rem; border-radius: 999px; font-size: .85rem;
+    border: 1px solid var(--regla); background: var(--fondo);
+  }
+  .plazas { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin-top: 1.6rem; }
+  .plaza { padding: .9rem 1rem; border-radius: 10px; border: 1px solid var(--regla); }
+  .plaza b { display: block; font-family: var(--serif); }
+  .plaza span { font-size: .82rem; color: var(--gris-tenue); }
+  @media (max-width: 480px) { .plazas { grid-template-columns: 1fr; } }
+  .lema {
+    margin: 1.8rem 0 0; padding-left: 1rem; border-left: 2px solid var(--oro);
+    font: italic 1.1rem/1.5 var(--serif); color: var(--gris);
+  }
+
+  /* ---------- proceso ---------- */
+  .pasos { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; counter-reset: paso; }
+  @media (max-width: 980px) { .pasos { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .pasos { grid-template-columns: 1fr; } }
+  .paso {
+    position: relative; padding: 1.5rem 1.3rem;
+    background: var(--papel); border: 1px solid var(--regla); border-radius: 14px;
+  }
+  .paso::before {
+    counter-increment: paso; content: "0" counter(paso);
+    display: block; margin-bottom: .8rem;
+    font: 700 2.4rem/1 var(--serif); color: var(--oro);
+  }
+  .paso h3 { margin: 0 0 .4rem; font: 700 1.12rem/1.3 var(--serif); }
+  .paso p { margin: 0; color: var(--gris); font-size: .93rem; }
+
+  /* ---------- contacto ---------- */
+  .contacto { background: var(--marino); color: #fff; }
+  .contacto .rotulo { color: var(--oro-claro); }
+  .contacto .intro { color: rgba(255,255,255,.75); }
+  .contacto .dos-col { align-items: start; }
+  .forma {
+    background: var(--papel); color: var(--texto);
+    border-radius: 16px; padding: 1.8rem; box-shadow: 0 20px 50px rgba(0,0,0,.25);
+  }
+  .campos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .campo { display: flex; flex-direction: column; gap: .35rem; }
+  .campo--ancho { grid-column: 1 / -1; }
+  @media (max-width: 520px) { .campos { grid-template-columns: 1fr; } .forma { padding: 1.3rem; } }
+  .campo label { font-size: .82rem; font-weight: 600; }
+  .campo input, .campo textarea {
+    width: 100%; padding: .75rem .85rem; border-radius: 9px;
+    border: 1px solid var(--regla); background: var(--fondo); color: var(--texto);
+    font: 1rem/1.4 var(--sans);
+  }
+  .campo textarea { min-height: 7.5rem; resize: vertical; }
+  .campo input:focus, .campo textarea:focus { outline: 2px solid var(--oro); outline-offset: 0; border-color: transparent; }
+  .consent { display: flex; gap: .6rem; align-items: flex-start; margin: 1.1rem 0; font-size: .85rem; color: var(--gris); }
+  .consent input { margin-top: .25rem; width: 1.1rem; height: 1.1rem; accent-color: var(--oro-hondo); flex: none; }
+  .envios { display: flex; flex-wrap: wrap; gap: .7rem; }
+  .envios .btn { flex: 1 1 12rem; }
+  .aviso-simple { margin: 1.1rem 0 0; font-size: .76rem; line-height: 1.5; color: var(--gris-tenue); }
+  .error { display: none; margin: .8rem 0 0; font-size: .85rem; color: #B3261E; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .error { color: #F2B8B5; } }
+  .error.visible { display: block; }
+  .directos { margin: 2rem 0 0; padding: 0; list-style: none; display: grid; gap: .8rem; }
+  .directos a, .directos div {
+    display: flex; align-items: center; gap: .9rem;
+    padding: 1rem 1.1rem; border-radius: 12px;
+    background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12);
+    text-decoration: none; color: #fff;
+  }
+  .directos a:hover { border-color: var(--oro); background: rgba(255,255,255,.08); }
+  .directos svg { width: 1.3rem; height: 1.3rem; color: var(--oro); flex: none; }
+  .directos small { display: block; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+  .directos b { font-weight: 600; word-break: break-word; }
+
+  /* ---------- pie ---------- */
+  .pie { background: #08111E; color: rgba(255,255,255,.7); padding: 3.5rem 0 1.5rem; font-size: .9rem; }
+  .pie-rejilla { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; }
+  @media (max-width: 760px) { .pie-rejilla { grid-template-columns: 1fr; } }
+  .pie h4 { margin: 0 0 .9rem; font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--oro); }
+  .pie ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .45rem; }
+  .pie a { text-decoration: none; }
+  .pie a:hover { color: var(--oro-claro); }
+  .pie .marca { margin-bottom: 1rem; }
+  .pie-base {
+    margin-top: 2.5rem; padding-top: 1.3rem; border-top: 1px solid rgba(255,255,255,.1);
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem; font-size: .8rem;
+    padding-right: 4.5rem; /* que el botón flotante no tape el lema */
+  }
+  .pie-base em { font-family: var(--serif); }
+
+  /* ---------- whatsapp flotante ---------- */
+  .flotante {
+    position: fixed; right: 1.1rem; bottom: 1.1rem; z-index: 60;
+    width: 3.6rem; height: 3.6rem; border-radius: 50%;
+    display: grid; place-items: center;
+    background: #1FA855; color: #fff; box-shadow: 0 8px 22px rgba(0,0,0,.28);
+    transition: transform .2s;
+  }
+  .flotante:hover { transform: scale(1.06); }
+  .flotante svg { width: 1.9rem; height: 1.9rem; }
+
+  /* ---------- entrada suave ---------- */
+  .alza { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+  .alza.visible { opacity: 1; transform: none; }
   @media (prefers-reduced-motion: reduce) {
-    .alza { animation: none; }
-    * { transition: none !important; }
+    .alza { opacity: 1; transform: none; transition: none; }
+    .diapo, .frase { transition: none; }
   }
 </style>
 </head>
 <body>
 
-<div class="env">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-correo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+  <symbol id="i-lugar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-whats" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.6.1a8.2 8.2 0 0 1-4.1-3.6c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.8a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.2-.3-.3-.5-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></symbol>
+  <symbol id="i-flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-balanza" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0L5 7zM19 7l-3 7a3 3 0 0 0 6 0l-3-7zM12 3l-1 2h2z"/></symbol>
+  <symbol id="i-grafica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/><path d="M15 8h4v4"/></symbol>
+  <symbol id="i-edificio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 21v-4h6v4M8 7h2M14 7h2M8 11h2M14 11h2"/></symbol>
+  <symbol id="i-recibo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2z"/><path d="M9 7h6M9 11h6M9 15h4"/></symbol>
+</svg>
 
-  <header class="masthead">
-    <div class="marca">Elizondo Soldevilla <span>y Asociados, S.C.</span></div>
-    <div class="lema">&ldquo;La justicia es igual para todos&rdquo;</div>
-  </header>
+<!-- ======================= NAVEGACIÓN ======================= -->
+<header class="nav" id="nav">
+  <div class="env">
+    <a class="marca" href="#inicio" aria-label="Elizondo Soldevilla y Asociados — inicio">
+      <picture><source srcset="img/logo.webp" type="image/webp"><img class="logo" src="img/logo.png" width="303" height="160" alt="Elizondo Soldevilla y Asociados, S.C."></picture>
+    </a>
+    <button class="hamburguesa" id="hamburguesa" aria-controls="menu" aria-expanded="false">
+      <span class="sr">Abrir menú</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a class="enl" href="#inicio">Inicio</a>
+      <a class="enl" href="#servicios">Servicios</a>
+      <a class="enl" href="#nosotros">Nosotros</a>
+      <a class="enl" href="#proceso">Cómo trabajamos</a>
+      <a class="enl" href="#contacto">Contacto</a>
+      <a class="btn btn--oro" href="#contacto">Agenda tu consulta</a>
+    </nav>
+  </div>
+</header>
 
-  <section class="apertura">
-    <p class="rotulo alza">Derecho laboral patronal &middot; San Luis Potos&iacute;</p>
-    <h1 class="tesis alza">La contingencia laboral no nace en el juicio. Nace en la <em>n&oacute;mina</em>.</h1>
-    <p class="bajada alza">Nace en el contrato que no corresponde a la relaci&oacute;n real, en el acta levantada sin las formalidades y en la baja documentada de prisa. Para cuando llega la demanda, esos tres documentos ya no admiten correcci&oacute;n. Nosotros trabajamos antes de ese momento, y cuando el asunto igual llega a juicio, lo litigamos.</p>
+<main>
 
-    <dl class="cifras alza">
-      <div class="cifra"><dt>+30</dt><dd>A&ntilde;os de ejercicio</dd></div>
+<!-- ======================= HERO ======================= -->
+<section class="hero" id="inicio" aria-roledescription="carrusel" aria-label="Presentación del despacho">
+  <!-- Para poner foto real: data-img="img/nombre.webp" y data-alt="descripción" -->
+  <div class="diapo activa" data-n="1" data-img="" data-alt=""></div>
+  <div class="diapo" data-n="2" data-img="" data-alt=""></div>
+  <div class="diapo" data-n="3" data-img="" data-alt=""></div>
+  <div class="hero-velo"></div>
+
+  <div class="env">
+    <picture><source srcset="img/logo-lema.webp" type="image/webp"><img class="hero-logo" src="img/logo-lema.png" width="504" height="300" alt="Elizondo Soldevilla y Asociados, S.C. — La justicia es igual para todos"></picture>
+    <p class="rotulo">Abogados y contadores · San Luis Potosí</p>
+    <div class="frases" aria-live="polite">
+      <h1 class="frase activa">La contingencia laboral no nace en el juicio. Nace en la <em>nómina</em>.</h1>
+      <p class="frase" aria-hidden="true">Más de 30 años protegiendo a las empresas de sus <em>contingencias laborales</em>.</p>
+      <p class="frase" aria-hidden="true">Prevención laboral, fiscal y corporativa, <em>antes</em> de que llegue el problema.</p>
+    </div>
+    <p class="bajada">Trabajamos antes de que llegue la demanda o la revisión: en el contrato, en el acta, en la nómina y en la contabilidad. Y cuando el asunto igual llega a juicio, lo litigamos.</p>
+    <div class="acciones">
+      <a class="btn btn--oro" href="tel:+524442164219"><svg aria-hidden="true"><use href="#i-tel"/></svg>Llámanos · 444 216 4219</a>
+      <a class="btn btn--claro wa" href="#" data-msg="Hola, me gustaría agendar una consulta con el despacho."><svg aria-hidden="true"><use href="#i-whats"/></svg>WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="controles">
+    <div class="env">
+      <button class="flecha" id="ant" aria-label="Diapositiva anterior"><svg style="transform:scaleX(-1)"><use href="#i-flecha"/></svg></button>
+      <div class="puntos" id="puntos" role="group" aria-label="Elegir diapositiva"></div>
+      <button class="flecha" id="sig" aria-label="Diapositiva siguiente"><svg><use href="#i-flecha"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CIFRAS ======================= -->
+<section class="cifras" aria-label="El despacho en cifras">
+  <div class="env">
+    <dl>
+      <div class="cifra"><dt>+30</dt><dd>Años de ejercicio</dd></div>
       <div class="cifra"><dt>100%</dt><dd>Capital mexicano</dd></div>
-      <div class="cifra"><dt>SLP</dt><dd>Noveno Circuito</dd></div>
+      <div class="cifra"><dt>3</dt><dd>SLP · Bajío · Vallarta</dd></div>
     </dl>
+  </div>
+</section>
 
-    <div class="acciones alza">
-      <a class="btn btn--oro" href="tel:+524442164219">Llamar al 444 216 4219</a>
-      <a class="btn" href="mailto:abel@elizondosoldevilla.com?subject=Consulta%20laboral">Escribir al despacho</a>
-    </div>
-  </section>
-
-  <section class="seccion">
-    <div class="instrumento">
-      <div class="marginal"><b>La firma</b>Contadores p&uacute;blicos<br>Licenciados en derecho<br>Consultores de negocios</div>
-      <div class="cuerpo">
-        <h2 class="seccion-tit">Un solo equipo para el frente laboral y el fiscal</h2>
-        <p class="intro">Trabajar el frente laboral separado del fiscal es lo que produce criterios encontrados dentro de la propia empresa: el &aacute;rea de n&oacute;mina registra de una forma, recursos humanos documenta de otra, y la contradicci&oacute;n aparece a&ntilde;os despu&eacute;s en un juicio, exhibida por la contraparte.</p>
-        <p class="intro">Elizondo Soldevilla y Asociados re&uacute;ne en un mismo despacho a licenciados en derecho, contadores p&uacute;blicos y consultores de negocios. La misma mano que calcula el finiquito es la que despu&eacute;s lo defiende.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="seccion">
-    <div class="instrumento">
-      <div class="marginal"><b>Pr&aacute;ctica laboral</b>Ley Federal<br>del Trabajo</div>
-      <div class="cuerpo">
-        <h2 class="seccion-tit">Defensa de la empresa, del expediente al laudo</h2>
-        <p class="intro">Seis frentes donde el riesgo se origina y donde, con la misma oportunidad, se neutraliza.</p>
-      </div>
+<!-- ======================= SERVICIOS ======================= -->
+<section class="seccion" id="servicios">
+  <div class="env">
+    <div class="cabeza alza">
+      <p class="rotulo">Áreas de práctica</p>
+      <h2 class="titulo">Un solo equipo para el frente laboral, el fiscal y el corporativo</h2>
+      <p class="intro">Trabajar esos frentes por separado es lo que produce criterios encontrados dentro de la propia empresa, y la contradicción aparece años después, exhibida por la contraparte. Aquí la misma mano que calcula el finiquito es la que después lo defiende.</p>
     </div>
 
-    <div class="clausulas">
-
-      <div class="instrumento clausula">
-        <div class="marginal">Art. 132 LFT</div>
-        <div class="cuerpo">
-          <h3>Consultor&iacute;a preventiva</h3>
-          <p>Participamos en las decisiones de las &aacute;reas operativas antes de que se tomen, con el panorama completo de las obligaciones de la persona empleadora y de las alternativas disponibles.</p>
-        </div>
-      </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Arts. 35, 39-A y 39-B LFT</div>
-        <div class="cuerpo">
-          <h3>Contratos individuales de trabajo</h3>
-          <p>Elaboraci&oacute;n conforme a la modalidad real de cada relaci&oacute;n: obra o tiempo determinado, temporada, periodo a prueba o capacitaci&oacute;n inicial. Un contrato que no corresponde a los hechos se desnaturaliza, y con &eacute;l se cae la defensa.</p>
-        </div>
-      </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Art. 47 LFT</div>
-        <div class="cuerpo">
-          <h3>Actas circunstanciadas y administrativas</h3>
-          <p>Documentaci&oacute;n de conductas u omisiones que sostiene el expediente del trabajador, la imposici&oacute;n de sanciones y la rescisi&oacute;n por causa justificada. La formalidad del acta es lo que decide el juicio, no la gravedad de la falta.</p>
-        </div>
-      </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Art. 684-A LFT</div>
-        <div class="cuerpo">
-          <h3>Citas conciliatorias</h3>
-          <p>Representaci&oacute;n de la empresa en la instancia conciliatoria previa ante los Centros de Conciliaci&oacute;n. Es donde el asunto se cierra barato o se encarece para siempre.</p>
-        </div>
-      </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Arts. 33 y 987 LFT</div>
-        <div class="cuerpo">
-          <h3>Terminaciones laborales</h3>
-          <p>Convenios, finiquitos y renuncias, desde la redacci&oacute;n del respaldo jur&iacute;dico hasta la aprobaci&oacute;n y ratificaci&oacute;n ante la autoridad competente. Sin ratificaci&oacute;n, un convenio es papel.</p>
-        </div>
-      </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Arts. 540 y 541 LFT</div>
-        <div class="cuerpo">
-          <h3>Inspecciones de la Secretar&iacute;a del Trabajo</h3>
-          <p>Acompa&ntilde;amiento durante la visita, desahogo y solventaci&oacute;n de observaciones. La empresa contesta mejor cuando el abogado est&aacute; ah&iacute; ese d&iacute;a, no cuando llega la multa.</p>
-        </div>
-      </div>
-
+    <div class="tarjetas">
+      <article class="tarjeta alza">
+        <div class="icono"><svg aria-hidden="true"><use href="#i-balanza"/></svg></div>
+        <h3>Laboral</h3>
+        <p>Defensa de la empresa, desde el contrato y el acta hasta el Tribunal Laboral y el amparo.</p>
+        <a class="ver-mas" href="#laboral">Ver más <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+      </article>
+      <article class="tarjeta alza">
+        <div class="icono"><svg aria-hidden="true"><use href="#i-grafica"/></svg></div>
+        <h3>Fiscal</h3>
+        <p>Planeación que se sostiene con su expediente, y defensa cuando llega la revisión.</p>
+        <a class="ver-mas" href="#fiscal">Ver más <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+      </article>
+      <article class="tarjeta alza">
+        <div class="icono"><svg aria-hidden="true"><use href="#i-edificio"/></svg></div>
+        <h3>Corporativo</h3>
+        <p>Asambleas, actas, poderes y reestructuras: la prueba de quién podía decidir qué.</p>
+        <a class="ver-mas" href="#corporativo">Ver más <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+      </article>
+      <article class="tarjeta alza">
+        <div class="icono"><svg aria-hidden="true"><use href="#i-recibo"/></svg></div>
+        <h3>Nómina y Seguridad Social</h3>
+        <p>Cálculo, integración del salario, IMSS y SIROC, bien estructurados desde el origen.</p>
+        <a class="ver-mas" href="#nomina">Ver más <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+      </article>
     </div>
 
-    <div class="aviso">
-      <p>Contamos con un grupo especializado en litigio para la defensa de empresas ante acciones de trabajadores o sindicatos, ante los Tribunales Laborales y en la v&iacute;a de amparo.</p>
-    </div>
-  </section>
-
-  <section class="seccion">
-    <div class="instrumento">
-      <div class="marginal"><b>Pr&aacute;ctica fiscal</b>Preventiva<br>y contenciosa</div>
-      <div class="cuerpo">
-        <h2 class="seccion-tit">Planeaci&oacute;n y defensa fiscal</h2>
-        <p class="intro">Somos especialistas en planeaci&oacute;n fiscal y en la defensa de la empresa frente a la autoridad. Dos caras del mismo trabajo: estructurar bien desde el principio, y sostenerlo cuando llega la revisi&oacute;n.</p>
-        <p class="intro">Contadores p&uacute;blicos y abogados en el mismo equipo, con actualizaci&oacute;n constante en legislaci&oacute;n tributaria federal y local.</p>
-      </div>
-    </div>
-
-    <div class="clausulas">
-
-      <div class="instrumento clausula">
-        <div class="marginal">Preventivo</div>
-        <div class="cuerpo">
-          <h3>Planeaci&oacute;n fiscal</h3>
-          <p>Dise&ntilde;o de estructuras y operaciones eficientes, con el respaldo documental que las sostiene. Una planeaci&oacute;n vale lo que vale su expediente el d&iacute;a que alguien la revisa.</p>
+    <!-- ---------- Laboral ---------- -->
+    <div class="practica" id="laboral">
+      <div class="practica-cab alza">
+        <div><p class="rotulo">Práctica laboral</p><h3>Defensa de la empresa, del expediente al laudo</h3></div>
+        <div>
+          <p>Seis frentes donde el riesgo se origina y donde, con la misma oportunidad, se neutraliza.</p>
         </div>
       </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Contencioso</div>
-        <div class="cuerpo">
-          <h3>Defensa fiscal</h3>
-          <p>Atenci&oacute;n de visitas domiciliarias, revisiones de gabinete y revisiones electr&oacute;nicas, recursos administrativos y juicio contencioso. Una revisi&oacute;n se gana o se pierde en lo que se entrega los primeros d&iacute;as, no en el recurso.</p>
-        </div>
-      </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Consultor&iacute;a</div>
-        <div class="cuerpo">
-          <h3>Asesor&iacute;a fiscal permanente</h3>
-          <p>Consultor&iacute;a preventiva y reactiva sobre la operaci&oacute;n del d&iacute;a a d&iacute;a, anticipando el criterio de la autoridad en lugar de reaccionar a &eacute;l.</p>
-        </div>
-      </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Cumplimiento</div>
-        <div class="cuerpo">
-          <h3>Contabilidad y obligaciones</h3>
-          <p>Integraci&oacute;n de la contabilidad conforme a los requisitos fiscales, revisi&oacute;n de proveedores y materialidad de las operaciones. La contabilidad no es un tr&aacute;mite: es la prueba con la que despu&eacute;s se defiende cada deducci&oacute;n.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="seccion">
-    <div class="instrumento">
-      <div class="marginal"><b>Derecho corporativo</b>Sociedades<br>y gobierno interno</div>
-      <div class="cuerpo">
-        <h2 class="seccion-tit">La vida societaria de la empresa</h2>
-        <p class="intro">Atendemos todo lo relacionado con el derecho corporativo: desde la constituci&oacute;n de la sociedad hasta las reestructuras, pasando por la vida ordinaria de asambleas, actas y poderes.</p>
-        <p class="intro">Son formalidades que parecen papeleo mientras la sociedad camina en paz. El d&iacute;a que hay diferencia entre socios, una venta, una herencia o una auditor&iacute;a, esos papeles son la &uacute;nica prueba de qui&eacute;n pod&iacute;a decidir qu&eacute;.</p>
-      </div>
+      <ul class="puntos-lista">
+        <li class="alza"><h4>Consultoría preventiva</h4><p>Participamos en las decisiones de las áreas operativas antes de que se tomen, con el panorama completo de las obligaciones de la persona empleadora.</p><span class="ley">Art. 132 LFT</span></li>
+        <li class="alza"><h4>Contratos individuales de trabajo</h4><p>Conforme a la modalidad real de cada relación. Un contrato que no corresponde a los hechos se desnaturaliza, y con él se cae la defensa.</p><span class="ley">Arts. 35, 39-A y 39-B LFT</span></li>
+        <li class="alza"><h4>Actas circunstanciadas y administrativas</h4><p>La formalidad del acta es lo que decide el juicio, no la gravedad de la falta.</p><span class="ley">Art. 47 LFT</span></li>
+        <li class="alza"><h4>Citas conciliatorias</h4><p>Representación ante los Centros de Conciliación. Es donde el asunto se cierra barato o se encarece para siempre.</p><span class="ley">Art. 684-A LFT</span></li>
+        <li class="alza"><h4>Terminaciones laborales</h4><p>Convenios, finiquitos y renuncias, hasta su ratificación ante la autoridad. Sin ratificación, un convenio es papel.</p><span class="ley">Arts. 33 y 987 LFT</span></li>
+        <li class="alza"><h4>Inspecciones de la Secretaría del Trabajo</h4><p>Acompañamiento durante la visita y solventación de observaciones. La empresa contesta mejor cuando el abogado está ahí ese día.</p><span class="ley">Arts. 540 y 541 LFT</span></li>
+      </ul>
+      <p class="nota alza">Contamos con un grupo especializado en litigio para la defensa de empresas ante acciones de trabajadores o sindicatos, ante los Tribunales Laborales y en la vía de amparo.</p>
     </div>
 
-    <div class="clausulas">
-
-      <div class="instrumento clausula">
-        <div class="marginal">Asambleas</div>
-        <div class="cuerpo">
-          <h3>Actas de asamblea</h3>
-          <p>Convocatoria, orden del d&iacute;a, celebraci&oacute;n y redacci&oacute;n del acta, ordinarias y extraordinarias, con su asiento en el libro y protocolizaci&oacute;n cuando procede. Una asamblea mal convocada produce acuerdos nulos por m&aacute;s que todos hayan estado de acuerdo.</p>
+    <!-- ---------- Fiscal ---------- -->
+    <div class="practica" id="fiscal">
+      <div class="practica-cab alza">
+        <div><p class="rotulo">Práctica fiscal</p><h3>Planeación y defensa fiscal</h3></div>
+        <div>
+          <p>Dos caras del mismo trabajo: estructurar bien desde el principio, y sostenerlo cuando llega la revisión. Contadores públicos y abogados en el mismo equipo.</p>
         </div>
       </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Constituci&oacute;n</div>
-        <div class="cuerpo">
-          <h3>Sociedades y estatutos</h3>
-          <p>Constituci&oacute;n de sociedades mercantiles y civiles, redacci&oacute;n y reforma de estatutos, aumentos y reducciones de capital, y su inscripci&oacute;n en el Registro P&uacute;blico de Comercio.</p>
-        </div>
-      </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Representaci&oacute;n</div>
-        <div class="cuerpo">
-          <h3>Poderes y &oacute;rganos de administraci&oacute;n</h3>
-          <p>Otorgamiento y revocaci&oacute;n de poderes, nombramiento de administradores, consejo y comisario. Qui&eacute;n puede firmar qu&eacute; es la primera pregunta de cualquier operaci&oacute;n, y la que m&aacute;s seguido no tiene respuesta clara.</p>
-        </div>
-      </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Reestructuras</div>
-        <div class="cuerpo">
-          <h3>Fusi&oacute;n, escisi&oacute;n y disoluci&oacute;n</h3>
-          <p>Reestructuras corporativas atendiendo sus dos caras a la vez, la societaria y la fiscal. Separarlas es lo que produce operaciones impecables ante notario e indefendibles ante la autoridad.</p>
-        </div>
-      </div>
-
-      <div class="instrumento clausula">
-        <div class="marginal">Gobierno</div>
-        <div class="cuerpo">
-          <h3>Libros y orden corporativo</h3>
-          <p>Libro de actas, registro de acciones o partes sociales, y puesta al corriente de sociedades que llevan a&ntilde;os operando sin documentar sus acuerdos.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="seccion">
-    <div class="instrumento">
-      <div class="marginal"><b>Operaci&oacute;n</b>Seguridad social<br>y n&oacute;mina</div>
-      <div class="cuerpo">
-        <h2 class="seccion-tit">Lo que sostiene todo lo anterior por debajo</h2>
-        <p class="intro">La exposici&oacute;n de una empresa rara vez aparece en el estado de resultados antes de ser condena. Cuando aparece, trae salarios ca&iacute;dos, intereses y una prima de antig&uuml;edad que nadie provision&oacute;.</p>
-      </div>
+      <ul class="puntos-lista">
+        <li class="alza"><h4>Planeación fiscal</h4><p>Estructuras y operaciones eficientes, con el respaldo documental que las sostiene. Una planeación vale lo que vale su expediente el día que alguien la revisa.</p><span class="ley">Preventivo</span></li>
+        <li class="alza"><h4>Defensa fiscal</h4><p>Visitas domiciliarias, revisiones de gabinete y electrónicas, recursos administrativos y juicio contencioso.</p><span class="ley">Contencioso</span></li>
+        <li class="alza"><h4>Asesoría fiscal permanente</h4><p>Consultoría sobre la operación del día a día, anticipando el criterio de la autoridad en lugar de reaccionar a él.</p><span class="ley">Consultoría</span></li>
+        <li class="alza"><h4>Contabilidad y obligaciones</h4><p>Contabilidad conforme a los requisitos fiscales, revisión de proveedores y materialidad de las operaciones.</p><span class="ley">Cumplimiento</span></li>
+      </ul>
     </div>
 
-    <div class="clausulas">
-
-      <div class="instrumento clausula">
-        <div class="marginal">IMSS</div>
-        <div class="cuerpo">
-          <h3>Seguridad social y SIROC</h3>
-          <p>Registro e inscripci&oacute;n ante el Instituto, determinaci&oacute;n de la prima del seguro de riesgos de trabajo y Sistema de Registro de Obras y Contratistas. La prima mal calculada se paga dos veces: en cuotas y en el juicio por riesgo de trabajo.</p>
+    <!-- ---------- Corporativo ---------- -->
+    <div class="practica" id="corporativo">
+      <div class="practica-cab alza">
+        <div><p class="rotulo">Derecho corporativo</p><h3>La vida societaria de la empresa</h3></div>
+        <div>
+          <p>Formalidades que parecen papeleo mientras la sociedad camina en paz. El día que hay diferencia entre socios, una venta o una auditoría, esos papeles son la única prueba de quién podía decidir qué.</p>
         </div>
       </div>
+      <ul class="puntos-lista">
+        <li class="alza"><h4>Actas de asamblea</h4><p>Convocatoria, orden del día, celebración y acta, ordinarias y extraordinarias. Una asamblea mal convocada produce acuerdos nulos.</p><span class="ley">Asambleas</span></li>
+        <li class="alza"><h4>Sociedades y estatutos</h4><p>Constitución, reforma de estatutos, aumentos y reducciones de capital, e inscripción en el Registro Público de Comercio.</p><span class="ley">Constitución</span></li>
+        <li class="alza"><h4>Poderes y órganos de administración</h4><p>Otorgamiento y revocación de poderes, administradores, consejo y comisario.</p><span class="ley">Representación</span></li>
+        <li class="alza"><h4>Fusión, escisión y disolución</h4><p>Reestructuras atendiendo a la vez su cara societaria y su cara fiscal.</p><span class="ley">Reestructuras</span></li>
+        <li class="alza"><h4>Libros y orden corporativo</h4><p>Libro de actas, registro de acciones o partes sociales, y puesta al corriente de sociedades con años sin documentar.</p><span class="ley">Gobierno</span></li>
+      </ul>
+    </div>
 
-      <div class="instrumento clausula">
-        <div class="marginal">N&oacute;mina</div>
-        <div class="cuerpo">
-          <h3>Servicio integral de n&oacute;minas</h3>
-          <p>C&aacute;lculo de n&oacute;mina y cuotas obrero-patronales, integraci&oacute;n del salario, recibos asimilados y dispersi&oacute;n. El salario diario integrado mal armado es el error que m&aacute;s caro se cobra en una liquidaci&oacute;n.</p>
+    <!-- ---------- Nómina ---------- -->
+    <div class="practica" id="nomina">
+      <div class="practica-cab alza">
+        <div><p class="rotulo">Nómina y seguridad social</p><h3>Lo que sostiene todo lo anterior por debajo</h3></div>
+        <div>
+          <p>La exposición de una empresa rara vez aparece en el estado de resultados antes de ser condena. Cuando aparece, trae salarios caídos, intereses y una prima de antigüedad que nadie provisionó.</p>
         </div>
       </div>
+      <ul class="puntos-lista">
+        <li class="alza"><h4>Seguridad social y SIROC</h4><p>Registro ante el IMSS, determinación de la prima de riesgos de trabajo y Sistema de Registro de Obras y Contratistas.</p><span class="ley">IMSS</span></li>
+        <li class="alza"><h4>Servicio integral de nóminas</h4><p>Cálculo de nómina y cuotas obrero-patronales, integración del salario y dispersión. El salario diario integrado mal armado es el error que más caro se cobra.</p><span class="ley">Nómina</span></li>
+        <li class="alza"><h4>Dispersión de excedentes de nómina</h4><p>Sueldos, horas extras, comisiones y bonos, bajo un esquema fiscal legal y bien estructurado.</p><span class="ley">Estructura</span></li>
+        <li class="alza"><h4>Consultoría administrativa</h4><p>Control interno, estudios por áreas de responsabilidad, estudios financieros y liquidaciones.</p><span class="ley">Control interno</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-      <div class="instrumento clausula">
-        <div class="marginal">Control interno</div>
-        <div class="cuerpo">
-          <h3>Consultor&iacute;a administrativa</h3>
-          <p>Estudios por &aacute;reas de responsabilidad, control interno, administraci&oacute;n de n&oacute;minas, estudios financieros y liquidaciones.</p>
-        </div>
+<!-- ======================= LLAMADA ======================= -->
+<section class="llamada" aria-label="Contacto rápido">
+  <div class="env">
+    <p>¿Ya llegó la demanda, la visita o el requerimiento? <span>Hablemos hoy.</span></p>
+    <div class="acciones">
+      <a class="btn btn--oro" href="tel:+524442164219"><svg aria-hidden="true"><use href="#i-tel"/></svg>444 216 4219</a>
+      <a class="btn btn--whats wa" href="#" data-msg="Hola, necesito asesoría urgente con el despacho."><svg aria-hidden="true"><use href="#i-whats"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= NOSOTROS ======================= -->
+<section class="seccion seccion--papel" id="nosotros">
+  <div class="env dos-col">
+    <!-- Para poner la foto real del equipo u oficina: data-img="img/equipo.webp" -->
+    <div class="foto alza" data-img="" data-alt="Equipo de Elizondo Soldevilla y Asociados">
+      <div class="foto-sello"><div><b aria-hidden="true"><svg><use href="#i-balanza"/></svg></b><span>Desde hace más de 30 años</span></div></div>
+      <div class="foto-pie"><b>Lic. Abel E. Elizondo Soldevilla</b><br>Titular del despacho</div>
+    </div>
+
+    <div class="alza">
+      <p class="rotulo">Nosotros</p>
+      <h2 class="titulo">Una firma que trabaja antes de que llegue el problema</h2>
+      <p class="intro">Elizondo Soldevilla y Asociados reúne en un mismo despacho a licenciados en derecho, contadores públicos y consultores de negocios. Llevamos más de treinta años acompañando a empresas en el frente laboral, fiscal y corporativo.</p>
+      <p class="intro">Nuestra forma de trabajar parte de una idea sencilla: casi todo lo que después se pelea en un juicio quedó decidido meses antes, en un documento. Por eso nos gusta estar ahí cuando ese documento se firma.</p>
+      <ul class="perfiles">
+        <li>Licenciados en derecho</li>
+        <li>Contadores públicos</li>
+        <li>Consultores de negocios</li>
+      </ul>
+      <div class="plazas">
+        <div class="plaza"><b>San Luis Potosí</b><span>Sede del despacho</span></div>
+        <div class="plaza"><b>El Bajío</b><span>Atención regional</span></div>
+        <div class="plaza"><b>Puerto Vallarta</b><span>Jalisco</span></div>
       </div>
-
+      <p class="lema">“La justicia es igual para todos”</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="colofon">
-    <p class="atentamente">Atentamente</p>
-    <p class="firmante">Lic. Abel E. Elizondo Soldevilla</p>
-    <p class="cargo">Elizondo Soldevilla y Asociados, S.C. &middot; San Luis Potos&iacute;, S.L.P.</p>
+<!-- ======================= PROCESO ======================= -->
+<section class="seccion" id="proceso">
+  <div class="env">
+    <div class="cabeza alza">
+      <p class="rotulo">Cómo trabajamos</p>
+      <h2 class="titulo">Cuatro pasos, sin sorpresas</h2>
+      <p class="intro">Antes de proponerle nada, entendemos qué tiene su empresa hoy y dónde está el riesgo real.</p>
+    </div>
+    <ol class="pasos">
+      <li class="paso alza"><h3>Diagnóstico inicial</h3><p>Revisamos contratos, actas, nómina y documentación para ubicar dónde nace la contingencia.</p></li>
+      <li class="paso alza"><h3>Estrategia a la medida</h3><p>Proponemos qué corregir, en qué orden y con qué costo, según la operación de su empresa.</p></li>
+      <li class="paso alza"><h3>Acompañamiento</h3><p>Estamos presentes en las decisiones, las inspecciones, las audiencias y las revisiones.</p></li>
+      <li class="paso alza"><h3>Defensa y seguimiento</h3><p>Si el asunto llega a juicio, lo litigamos con el expediente que ayudamos a construir.</p></li>
+    </ol>
+  </div>
+</section>
 
-    <div class="datos">
-      <a href="tel:+524442164219">444 216 4219</a>
-      <a href="mailto:abel@elizondosoldevilla.com">abel@elizondosoldevilla.com</a>
-      <span>San Luis Potos&iacute; &middot; Baj&iacute;o &middot; Puerto Vallarta, Jal.</span>
+<!-- ======================= CONTACTO ======================= -->
+<section class="seccion contacto" id="contacto">
+  <div class="env dos-col">
+    <div class="alza">
+      <p class="rotulo">Contacto</p>
+      <h2 class="titulo">Agenda tu consulta</h2>
+      <p class="intro">Cuéntenos brevemente su asunto y le respondemos a la brevedad. Si es urgente, llámenos directamente.</p>
+      <ul class="directos">
+        <li><a href="tel:+524442164219"><svg aria-hidden="true"><use href="#i-tel"/></svg><span><small>Teléfono</small><b>444 216 4219</b></span></a></li>
+        <li><a class="wa" href="#" data-msg="Hola, me gustaría agendar una consulta con el despacho."><svg aria-hidden="true"><use href="#i-whats"/></svg><span><small>WhatsApp</small><b>Escríbanos por WhatsApp</b></span></a></li>
+        <li><a href="mailto:abel@elizondosoldevilla.com"><svg aria-hidden="true"><use href="#i-correo"/></svg><span><small>Correo</small><b>abel@elizondosoldevilla.com</b></span></a></li>
+        <li><div><svg aria-hidden="true"><use href="#i-lugar"/></svg><span><small>Atendemos en</small><b>San Luis Potosí · Bajío · Puerto Vallarta</b></span></div></li>
+      </ul>
     </div>
 
-    <div class="pie">
-      <span>&copy; 2026 Elizondo Soldevilla y Asociados, S.C.</span>
-      <em>&ldquo;La justicia es igual para todos&rdquo;</em>
+    <form class="forma alza" id="forma" novalidate>
+      <div class="campos">
+        <div class="campo"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
+        <div class="campo"><label for="f-empresa">Empresa</label><input id="f-empresa" name="empresa" autocomplete="organization"></div>
+        <div class="campo"><label for="f-tel">Teléfono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel"></div>
+        <div class="campo"><label for="f-correo">Correo</label><input id="f-correo" name="correo" type="email" autocomplete="email"></div>
+        <div class="campo campo--ancho"><label for="f-msj">¿En qué podemos ayudarle?</label><textarea id="f-msj" name="mensaje" required></textarea></div>
+      </div>
+      <label class="consent"><input type="checkbox" id="f-ok" required> <span>He leído el <a href="aviso-de-privacidad.html">aviso de privacidad</a> y acepto que el despacho use estos datos para atender mi solicitud.</span></label>
+      <div class="envios">
+        <button class="btn btn--whats" type="submit" data-via="whats"><svg aria-hidden="true"><use href="#i-whats"/></svg>Enviar por WhatsApp</button>
+        <button class="btn btn--marino" type="submit" data-via="correo"><svg aria-hidden="true"><use href="#i-correo"/></svg>Enviar por correo</button>
+      </div>
+      <p class="error" id="f-error" role="alert"></p>
+      <p class="aviso-simple"><b>Aviso de privacidad simplificado.</b> Elizondo Soldevilla y Asociados, S.C., con domicilio en San Luis Potosí, S.L.P., es responsable de los datos que usted proporcione en este formulario (nombre, empresa, teléfono, correo y la descripción de su asunto), los cuales se usarán únicamente para atender y dar seguimiento a su solicitud de consulta. Puede limitar su uso o ejercer sus derechos de acceso, rectificación, cancelación y oposición escribiendo a abel@elizondosoldevilla.com. Consulte el <a href="aviso-de-privacidad.html">aviso de privacidad integral</a>. Este sitio no almacena la información: el mensaje se envía desde su propio WhatsApp o correo.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= PIE ======================= -->
+<footer class="pie">
+  <div class="env">
+    <div class="pie-rejilla">
+      <div>
+        <a class="marca" href="#inicio"><picture><source srcset="img/logo-lema.webp" type="image/webp"><img class="logo-lema" src="img/logo-lema.png" width="504" height="300" loading="lazy" alt="Elizondo Soldevilla y Asociados, S.C. — La justicia es igual para todos"></picture></a>
+        <p>Abogados, contadores y consultores de negocios. Derecho laboral patronal, fiscal y corporativo.</p>
+      </div>
+      <div>
+        <h4>Despacho</h4>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#proceso">Cómo trabajamos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="aviso-de-privacidad.html">Aviso de privacidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+524442164219">444 216 4219</a></li>
+          <li><a href="mailto:abel@elizondosoldevilla.com">abel@elizondosoldevilla.com</a></li>
+          <li>San Luis Potosí · Bajío · Puerto Vallarta, Jal.</li>
+        </ul>
+      </div>
     </div>
-  </footer>
+    <div class="pie-base">
+      <span>© <span id="anio">2026</span> Elizondo Soldevilla y Asociados, S.C.</span>
+    </div>
+  </div>
+</footer>
 
-</div>
+<a class="flotante wa" href="#" data-msg="Hola, me gustaría agendar una consulta con el despacho." aria-label="Escríbanos por WhatsApp">
+  <svg aria-hidden="true"><use href="#i-whats"/></svg>
+</a>
 
+<script>
+(function () {
+  "use strict";
+  var WHATS = "524442164219";               // número de WhatsApp del despacho
+  var CORREO = "abel@elizondosoldevilla.com";
+  var reducir = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function linkWhats(msg) { return "https://wa.me/" + WHATS + "?text=" + encodeURIComponent(msg); }
+
+  // --- enlaces de WhatsApp ---
+  document.querySelectorAll("a.wa").forEach(function (a) {
+    a.href = linkWhats(a.getAttribute("data-msg") || "Hola");
+    a.target = "_blank"; a.rel = "noopener";
+  });
+
+  // --- navegación ---
+  var nav = document.getElementById("nav");
+  var menu = document.getElementById("menu");
+  var ham = document.getElementById("hamburguesa");
+  function pintarNav() { nav.classList.toggle("solida", window.scrollY > 40); }
+  pintarNav();
+  window.addEventListener("scroll", pintarNav, { passive: true });
+  function cerrarMenu() {
+    menu.classList.remove("abierto"); nav.classList.remove("menu-abierto");
+    ham.setAttribute("aria-expanded", "false");
+  }
+  ham.addEventListener("click", function () {
+    var abierto = menu.classList.toggle("abierto");
+    nav.classList.toggle("menu-abierto", abierto);
+    ham.setAttribute("aria-expanded", String(abierto));
+  });
+  menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", cerrarMenu); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") cerrarMenu(); });
+
+  // --- fotos: solo se colocan si el archivo existe ---
+  document.querySelectorAll("[data-img]").forEach(function (el) {
+    var src = el.getAttribute("data-img");
+    if (!src) return;
+    var img = new Image();
+    img.onload = function () {
+      el.style.backgroundImage = "url('" + src + "')";
+      el.classList.add("con-foto");
+      var alt = el.getAttribute("data-alt");
+      if (alt) { el.setAttribute("role", "img"); el.setAttribute("aria-label", alt); }
+    };
+    img.src = src;
+  });
+
+  // --- carrusel ---
+  var diapos = [].slice.call(document.querySelectorAll(".diapo"));
+  var frases = [].slice.call(document.querySelectorAll(".frase"));
+  var puntos = document.getElementById("puntos");
+  var actual = 0, reloj = null, INTERVALO = 6000;
+  diapos.forEach(function (_, i) {
+    var b = document.createElement("button");
+    b.className = "punto";
+    b.setAttribute("aria-label", "Diapositiva " + (i + 1));
+    b.addEventListener("click", function () { ir(i); reiniciar(); });
+    puntos.appendChild(b);
+  });
+  var botones = [].slice.call(puntos.children);
+  function ir(n) {
+    actual = (n + diapos.length) % diapos.length;
+    diapos.forEach(function (d, i) { d.classList.toggle("activa", i === actual); });
+    frases.forEach(function (f, i) {
+      f.classList.toggle("activa", i === actual);
+      f.setAttribute("aria-hidden", i === actual ? "false" : "true");
+    });
+    botones.forEach(function (b, i) { b.setAttribute("aria-current", i === actual ? "true" : "false"); });
+  }
+  function avanzar() { ir(actual + 1); }
+  function arrancar() { if (!reducir && !reloj) reloj = setInterval(avanzar, INTERVALO); }
+  function parar() { clearInterval(reloj); reloj = null; }
+  function reiniciar() { parar(); arrancar(); }
+  document.getElementById("sig").addEventListener("click", function () { avanzar(); reiniciar(); });
+  document.getElementById("ant").addEventListener("click", function () { ir(actual - 1); reiniciar(); });
+  var hero = document.getElementById("inicio");
+  hero.addEventListener("mouseenter", parar);
+  hero.addEventListener("mouseleave", arrancar);
+  hero.addEventListener("focusin", parar);
+  hero.addEventListener("focusout", arrancar);
+  document.addEventListener("visibilitychange", function () { document.hidden ? parar() : arrancar(); });
+  var x0 = null;
+  hero.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  hero.addEventListener("touchend", function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 45) { ir(actual + (dx < 0 ? 1 : -1)); reiniciar(); }
+    x0 = null;
+  }, { passive: true });
+  ir(0); arrancar();
+
+  // --- aparición suave ---
+  var alzas = document.querySelectorAll(".alza");
+  if ("IntersectionObserver" in window && !reducir) {
+    var io = new IntersectionObserver(function (ents) {
+      ents.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("visible"); io.unobserve(en.target); } });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    alzas.forEach(function (el) { io.observe(el); });
+  } else {
+    alzas.forEach(function (el) { el.classList.add("visible"); });
+  }
+
+  // --- formulario: arma el mensaje y lo abre en WhatsApp o en el correo del visitante ---
+  var forma = document.getElementById("forma");
+  var error = document.getElementById("f-error");
+  var via = "whats";
+  forma.querySelectorAll("button[type=submit]").forEach(function (b) {
+    b.addEventListener("click", function () { via = b.getAttribute("data-via"); });
+  });
+  forma.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var v = function (id) { return document.getElementById(id).value.trim(); };
+    var faltan = [];
+    if (!v("f-nombre")) faltan.push("su nombre");
+    if (!v("f-msj")) faltan.push("una descripción breve de su asunto");
+    if (!v("f-tel") && !v("f-correo")) faltan.push("un teléfono o correo para responderle");
+    if (!document.getElementById("f-ok").checked) faltan.push("que acepta el aviso de privacidad");
+    if (faltan.length) {
+      var lista = faltan.length > 1 ? faltan.slice(0, -1).join(", ") + " y " + faltan[faltan.length - 1] : faltan[0];
+      error.textContent = "Para enviar, indique " + lista + ".";
+      error.classList.add("visible");
+      return;
+    }
+    error.classList.remove("visible");
+    var cuerpo =
+      "Nombre: " + v("f-nombre") +
+      (v("f-empresa") ? "\nEmpresa: " + v("f-empresa") : "") +
+      (v("f-tel") ? "\nTeléfono: " + v("f-tel") : "") +
+      (v("f-correo") ? "\nCorreo: " + v("f-correo") : "") +
+      "\n\n" + v("f-msj");
+    if (via === "correo") {
+      window.location.href = "mailto:" + CORREO +
+        "?subject=" + encodeURIComponent("Solicitud de consulta — " + (v("f-empresa") || v("f-nombre"))) +
+        "&body=" + encodeURIComponent(cuerpo);
+    } else {
+      window.open(linkWhats("Hola, me gustaría agendar una consulta.\n\n" + cuerpo), "_blank", "noopener");
+    }
+  });
+
+  document.getElementById("anio").textContent = new Date().getFullYear();
+})();
+</script>
 </body>
 </html>
